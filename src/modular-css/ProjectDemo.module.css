@@ -10,14 +10,6 @@ header {
   color: white;
 }
 
-nav {
-  height: 4rem;
-  background-color: rgb(0, 0, 155);
-  display: grid;
-  place-items: center;
-  color: white;
-}
-
 main {
   background-color: rgb(0, 0, 205);
   display: grid;
