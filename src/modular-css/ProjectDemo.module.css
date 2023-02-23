@@ -1,0 +1,59 @@
+body {
+  background-color: lightblue;
+}
+
+header {
+  height: 6rem;
+  background-color: rgb(0, 0, 105);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+nav {
+  height: 4rem;
+  background-color: rgb(0, 0, 155);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+main {
+  background-color: rgb(0, 0, 205);
+  display: grid;
+  grid-template-areas:
+    ". . . category . . ."
+    "main main main main main main aside";
+  gap: 1rem;
+  height: 74vh;
+}
+
+#categories {
+  grid-area: category;
+  background-color: lightblue;
+  display: grid;
+  place-items: center;
+  align-self: start;
+}
+
+.quizField {
+  grid-area: main;
+  background-color: lightblue;
+  display: grid;
+  place-items: center;
+}
+
+.hintField {
+  grid-area: aside;
+  background-color: lightblue;
+  display: grid;
+  place-items: center;
+}
+
+footer {
+  height: 4rem;
+  background-color: rgb(0, 0, 105);
+  display: grid;
+  place-items: center;
+  color: white;
+}

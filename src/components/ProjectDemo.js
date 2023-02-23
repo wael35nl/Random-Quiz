@@ -1,4 +1,5 @@
 import React from "react";
+import css from '../modular-css/ProjectDemo.module.css';
 
 const ProjectDemo = () => {
   return (
@@ -10,7 +11,7 @@ const ProjectDemo = () => {
         <h2>logo - - - - - Nav bar = about - contact - sign up - log in</h2>
       </nav>
       <main>
-        <select id="categories">
+        <select id={css.categories}>
           <option selected disabled>
             Category
           </option>
@@ -19,7 +20,7 @@ const ProjectDemo = () => {
           <option value="">Movies</option>
           <option value="">Programming</option>
         </select>
-        <section id="quiz-field">
+        <section className={css.quizField}>
           <article>
             <h2>Quiz</h2>
             <progress></progress>
@@ -31,7 +32,7 @@ const ProjectDemo = () => {
             &nbsp;<button></button>
           </article>
         </section>
-        <section id="hint-field">
+        <section className={css.hintField}>
           <article>
             <h2>Display / Hint</h2>
           </article>
