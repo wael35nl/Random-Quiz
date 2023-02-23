@@ -1,0 +1,32 @@
+.page_header {
+    height: 6rem;
+    background-color: rgb(0, 0, 105);
+    color: white;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.page_header h1 {
+    position: absolute;
+    left: 1%;
+    animation-name: title;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transition: all ease-in-out;
+}
+
+@keyframes title {
+    25%{
+        left: 30%;
+        color: lightblue;
+    }
+    50%{
+        left: 60%;
+        color: yellow;
+    }
+    75%{
+        left: 91%;
+        color: lightgreen;
+    }
+}

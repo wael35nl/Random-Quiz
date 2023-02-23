@@ -1,0 +1,25 @@
+.page_footer {
+    background-color: rgb(0, 0, 105);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.social_media {
+    display: flex;
+    gap: 2rem;
+}
+
+.social_media_icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
