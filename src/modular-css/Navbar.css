@@ -60,7 +60,6 @@ input:hover {
   box-shadow: 0 10px 12px 0 rgba(48, 79, 253, 0.9);
 }
 .input__section button:hover {
-  color: ;
   box-shadow: 0 10px 18px 0 rgba(155, 161, 247, 0.9);
-  transform: scale(1.1);
+  transform: scale(1);
 }
