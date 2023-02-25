@@ -1,27 +1,32 @@
 .quizField {
-    margin: 5rem 0;
+    margin: 1rem 0;
     border-bottom: 2px solid white;
-    padding-bottom: 0.5em;
-}
-
-.question {
-    max-width: 75%;
 }
 
 .li {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     cursor: pointer;
-    width: fit-content;
-    padding: 1em;
+    padding: 0.2em 0.4em;
     font-size: 1.5rem;
-    max-width: 75%;
+    width: fit-content;
 }
 
 .li:hover {
     background-color: white;
 }
 
-li button {
+.btn {
+    width: fit-content;
+    height: 2rem;
+    padding: 0.5em;
+    margin-right: 0.5rem;
     border: none;
-    background: transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: green;
 }
