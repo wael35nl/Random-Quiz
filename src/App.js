@@ -10,18 +10,16 @@ import useFetch from "./hooks/useFetch";
 // import ProjectDemo from "./components/ProjectDemo";
 
 const App = () => {
-
-
-
-
   // return <ProjectDemo />;
   const { data } = useFetch();
-  return (<>
-    <Header />
-    <Navbar />
-    <Body data={data} />
-    <Footer />
-  </>);
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <Body data={data} />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
