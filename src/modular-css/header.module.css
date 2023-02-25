@@ -9,7 +9,7 @@
 
 .page_header h1 {
     position: absolute;
-    left: 1%;
+    left: 2%;
     animation-name: title;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -19,14 +19,14 @@
 @keyframes title {
     25%{
         left: 30%;
-        color: lightblue;
+        color: blue;
     }
     50%{
         left: 60%;
         color: yellow;
     }
     75%{
-        left: 91%;
-        color: lightgreen;
+        left: 90%;
+        color: green;
     }
 }

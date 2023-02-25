@@ -1,5 +1,6 @@
 import React from "react";
-import { HiArchive } from "react-icons/fa";
+// import { HiArchive } from "react-icons/fa";
+// eslint-disable-next-line
 import style from "../modular-css/Navbar.css";
 
 const Navbar = () => {

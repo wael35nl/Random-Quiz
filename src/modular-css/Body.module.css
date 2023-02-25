@@ -1,35 +1,44 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(0, 0, 205);
 }
 
 #main {
   background-color: rgb(0, 0, 205);
   display: grid;
   grid-template-areas:
-    ". . . category . . ."
-    "main main main main main main aside";
+    ". category ."
+    "main main aside";
   gap: 1rem;
-  height: 74vh;
+  min-height: 74vh;
+  padding: 0 1em;
 }
 
 #categories {
   grid-area: category;
-  background-color: lightblue;
+  background-color: rgb(48, 136, 198);
   display: grid;
   place-items: center;
   align-self: start;
+  margin-top: 1rem;
+  font-size: larger;
+}
+
+progress {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 0.5rem;
 }
 
 #quizField {
   grid-area: main;
-  background-color: lightblue;
+  background-color: rgb(48, 136, 198);
   display: grid;
   place-items: center;
+  padding: 1em;
 }
 
 #hintField {
   grid-area: aside;
-  background-color: lightblue;
-  display: grid;
-  place-items: center;
+  background-image: url('https://miro.medium.com/max/1200/1*TbN7I_tJutDRmqC98mbO8Q.gif');
+  background-size: contain;
 }

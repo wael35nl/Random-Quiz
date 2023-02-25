@@ -1,35 +1,25 @@
 import React from "react";
 
 import css from "../modular-css/Body.module.css";
+import Category from "./Category";
+import QuizField from "./QuizField";
 
-const Body = () => {
+const Body = (props) => {
+  const { data } = props;
+
   return (
     <div id={css.main}>
-      <select id={css.categories}>
-        <option selected disabled>
-          Category
-        </option>
-        <option value="">Sport</option>
-        <option value="">Languages</option>
-        <option value="">Movies</option>
-        <option value="">Programming</option>
-      </select>
+      <Category data={data} />
       <section id={css.quizField}>
-        <article>
-          <h2>Quiz</h2>
-          <progress></progress>
-          <h3>Scores</h3>
-          <h4>Question</h4>
-          <p>Answer options</p>
-          <p>Buttons</p>
-          <button></button>&nbsp;<button></button>&nbsp;<button></button>
-          &nbsp;<button></button>
-        </article>
+        <h2>Quiz</h2><br />
+        <h3>Right Answers: {0} / {data.length}</h3>
+        <h3>Wrong Answers: {0} / {data.length}</h3>
+        <progress min={0} value={1} max={data.length}></progress>
+        <progress min={0} value={1} max={data.length}></progress>
+        <QuizField data={data} />
       </section>
       <section id={css.hintField}>
-        <article>
-          <h2>Display / Hint</h2>
-        </article>
+        <h2>Display / Hint</h2>
       </section>
     </div>
   );
