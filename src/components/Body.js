@@ -6,9 +6,7 @@ const Body = () => {
   return (
     <div id={css.main}>
       <select id={css.categories}>
-        <option selected disabled>
-          Category
-        </option>
+        <option disabled>Category</option>
         <option value="">Sport</option>
         <option value="">Languages</option>
         <option value="">Movies</option>

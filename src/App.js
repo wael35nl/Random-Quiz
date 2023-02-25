@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 const App = () => {
   // return <ProjectDemo />;
   return (<>
-    <Header />
+    <Header/>
     <Navbar />
     <Body />
     <Footer />

@@ -1,0 +1,79 @@
+:root {
+  --animationTime: 5s;
+  --animationZero: 1%;
+  --animationOne: 30%;
+  --animationTwo: 60%;
+  --animationThree: 90%;
+}
+
+.title {
+  font-size: 3.5rem;
+  position: absolute;
+  left: 1%;
+
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title1 {
+  0% {
+    left: var(--animationZero);
+  }
+  100% {
+    left: var(--animationOne);
+  }
+}
+
+@keyframes title2 {
+  0% {
+    left: var(--animationOne);
+  }
+  100% {
+    left: var(--animationTwo);
+  }
+}
+@keyframes title3 {
+  0% {
+    left: var(--animationTwo);
+  }
+  100% {
+    left: var(--animationThree);
+  }
+}
+
+@keyframes title4 {
+  0% {
+    left: var(--animationThree);
+  }
+  100% {
+    left: var(--animationZero);
+  }
+}
+
+.title[animation="1"] {
+  animation-name: title1;
+  pointer-events: none;
+}
+.title[animation="2"] {
+  left: var(--animationOne);
+}
+.title[animation="3"] {
+  animation-name: title2;
+  pointer-events: none;
+}
+.title[animation="4"] {
+  left: var(--animationTwo);
+}
+.title[animation="5"] {
+  animation-name: title3;
+}
+.title[animation="6"] {
+  left: var(--animationThree);
+}
+.title[animation="7"] {
+  animation-name: title4;
+}
+.title[animation="8"] {
+  left: var(--animationZero);
+}

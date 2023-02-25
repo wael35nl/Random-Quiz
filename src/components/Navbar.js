@@ -30,15 +30,15 @@ const Navbar = () => {
         </ul>
       </section>
 
-      <section className=" input__section" onSubmit>
+      <section className=" input__section" /*onSubmit*/>
         <label>Email</label>
-        <input type="email" name="email" id="email" onChange required />
+        <input type="email" name="email" id="email" /*onChange*/ required />
         <label>password</label>
         <input
           type="password"
           name="password"
           id="password"
-          onchange
+          /*onchange*/
           required
         />
         <button type="submit" className="navbar__btn">
