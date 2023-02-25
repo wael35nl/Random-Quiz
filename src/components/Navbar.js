@@ -21,9 +21,9 @@ const Navbar = () => {
       </section>
 
       <section className={style.input__section} onSubmit>
-        <label for="email">Email</label>&nbsp;
+        <label htmlFor="email">Email</label>&nbsp;
         <input type="email" name="email" id="email" onChange required />
-        <label for="password">password</label>&nbsp;
+        <label htmlFor="password">password</label>&nbsp;
         <input type="password" name="password" id="password" onchange required />
         <button type="submit">LOG IN</button>
         <button type="submit">Sign Up</button>
