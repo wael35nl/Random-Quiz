@@ -1,8 +1,23 @@
-import React from "react";
-// eslint-disable-next-line
+import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import style from "../modular-css/navbar.module.css";
 
+// import Input from "./Input";
+
 const Navbar = () => {
+  const NewInput = [
+    {
+      id: uuidv4(),
+      email: "",
+      password: "",
+    },
+  ];
+  const [values, setValues] = useState(NewInput);
+  const NewValues = (value) => {
+    setValues((PrevValue) => [...PrevValue, value]);
+    console.log(values);
+  };
   return (
     <nav>
       <section className={style.option__container}>
@@ -28,6 +43,7 @@ const Navbar = () => {
         <button type="submit">LOG IN</button>
         <button type="submit">Sign Up</button>
       </section>
+      {/* <Input NewValues={NewValues} /> */}
     </nav>
   );
 };
