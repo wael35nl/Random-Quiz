@@ -15,7 +15,6 @@ const Footer = () => {
                 <ul>
                     <li>Email: Alex@gmail.com</li>
                     <li>Phone: 003100320033</li>
-                    <li>Address: Helsinki / Finland</li>
                 </ul>
             </div>
         </section>
