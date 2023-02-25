@@ -16,11 +16,11 @@ body {
 #categories {
   grid-area: category;
   background-color: rgb(48, 136, 198);
-  display: grid;
-  place-items: center;
-  align-self: start;
   margin-top: 1rem;
   font-size: larger;
+  border-radius: 10px;
+  text-indent: 0.5rem;
+  width: 10rem;
 }
 
 progress {
