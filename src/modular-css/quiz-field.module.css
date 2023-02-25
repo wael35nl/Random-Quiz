@@ -30,3 +30,8 @@
     opacity: 0.8;
     color: green;
 }
+
+.btn:disabled {
+    opacity: 1;
+    color: gray;
+}
