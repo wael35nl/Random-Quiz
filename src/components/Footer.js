@@ -7,15 +7,15 @@ const Footer = () => {
     return <footer className={styles.page_footer}>
         <section>
             <h2>Created with <span style={{ color: 'red' }}>&hearts;</span> by: Estella | Samir | Wael</h2>
-            <div><img src={require('../images/Wael-AbuRayya.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
+            <div className={styles.footer_images}><img src={require('../images/Wael-AbuRayya.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
         </section>
-        <section>
-            <h2>Contact Info</h2>
+        <section className={styles.contact}>
+            <h2>Contact</h2>
             <div>
                 <ul>
-                    <li>Email</li>
-                    <li>Phone:</li>
-                    <li>Address:</li>
+                    <li>Email: Alex@gmail.com</li>
+                    <li>Phone: 003100320033</li>
+                    <li>Address: Helsinki / Finland</li>
                 </ul>
             </div>
         </section>
@@ -30,10 +30,9 @@ const Footer = () => {
             </div>
             <div>
                 <h2>Find Us</h2>
-                <div className={styles.social_media_icon}>
+                <div className={styles.social_media_icon2}>
                     <FaGithub />
                     <FaLinkedin />
-                    <FaTwitter />
                 </div>
             </div>
         </section>

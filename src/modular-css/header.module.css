@@ -6,38 +6,24 @@ html {
 .page_header {
     height: 6rem;
     background-color: rgb(0, 0, 105);
-    color: white;
+    color: red;
     display: grid;
     place-items: center;
     position: relative;
 }
 
 
-
-/* @keyframes title {
-    0% {
-        left: 5%;
-    }
+/*@keyframes title {
     25%{
         left: 30%;
-        left: 25%;
-        color: lightblue;
+        color: rgb(0, 0, 255);
     }
     50%{
         left: 60%;
-        left: 85%;
-        color: rgb(217, 213, 87);
-    }
-    100% {
-        left: 5%;
+        color: orange;
     }
     75%{
-        left: 50%;
-        color: rgb(106, 183, 106);
-    }
-    75%{
-        left: 91%;
-        right: 100%;
-        color: rgb(172, 106, 183);
+        left: 90%;
+        color: rgb(0, 255, 0);
     }
 } */

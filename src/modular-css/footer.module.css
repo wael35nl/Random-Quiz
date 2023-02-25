@@ -5,6 +5,15 @@
     align-items: center;
     color: white;
     margin-top: 1rem;
+    padding: 0.5em;
+}
+
+.footer_images {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding-right: 0.5em;
+    margin-top: 0.5rem;
 }
 
 footer img {
@@ -13,13 +22,23 @@ footer img {
     border-radius: 50%;
 }
 
+.contact li {
+    margin-top: 0.5rem;
+}
+
 .social_media {
     display: flex;
     gap: 2rem;
 }
 
-.social_media_icon {
+.social_media_icon, .social_media_icon2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social_media_icon2 {
+    grid-template-columns: repeat(2, 1fr);
 }

@@ -1,35 +1,56 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(0, 0, 205);
 }
 
 #main {
-  background-color: rgb(0, 0, 205);
   display: grid;
-  grid-template-areas:
-    ". . . category . . ."
-    "main main main main main main aside";
+  grid-template-columns: 3fr 1fr;
   gap: 1rem;
-  height: 74vh;
+  padding: 0 1em;
+  min-height: 39.5rem;
+}
+
+.score {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  color: white;
 }
 
 #categories {
-  grid-area: category;
-  background-color: lightblue;
-  display: grid;
-  place-items: center;
-  align-self: start;
+  background-color: rgb(48, 136, 198);
+  font-size: larger;
+  border-radius: 10px;
+  text-indent: 0.5rem;
+  width: 10rem;
+  height: 2rem;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+progress {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 0.5rem;
 }
 
 #quizField {
-  grid-area: main;
-  background-color: lightblue;
-  display: grid;
-  place-items: center;
+  background-color: rgb(48, 136, 198);
+  padding: 1em;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #hintField {
-  grid-area: aside;
-  background-color: lightblue;
-  display: grid;
-  place-items: center;
+  background-image: url('../images/quiz-time.gif');
+  background-size: 100% 100%;
+  min-height: 35rem;
 }
