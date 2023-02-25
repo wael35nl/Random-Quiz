@@ -7,7 +7,7 @@ body {
   grid-template-columns: 3fr 1fr;
   gap: 1rem;
   padding: 0 1em;
-  min-height: 39.5rem;
+  min-height: 41.1rem;
 }
 
 .score {
@@ -42,7 +42,7 @@ progress {
 
 #quizField {
   background-color: rgb(48, 136, 198);
-  padding: 1em;
+  padding: 1em 4em;
   min-height: 35rem;
   display: flex;
   flex-direction: column;
