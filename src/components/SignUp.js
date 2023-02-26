@@ -43,7 +43,7 @@ const SignUp = (props) => {
           name="Firstname"
           id="Firstname"
           onChange={HandelNewUser}
-          // value={NewUser.Firstname}
+           value={NewUser.Firstname}
           required
         />
         <label htmlFor="name">Last Name</label>&nbsp;
@@ -52,7 +52,7 @@ const SignUp = (props) => {
           name="Lastname"
           id="Lastname"
           onChange={HandelNewUser}
-          //value={NewUser.Lastname}
+          value={NewUser.Lastname}
           required
         />
         <label htmlFor="email">Email</label>&nbsp;
@@ -62,7 +62,7 @@ const SignUp = (props) => {
           id="email"
           placeholder="example@test.com"
           onChange={HandelNewUser}
-          //value={NewUser.email}
+          value={NewUser.email}
           required
         />
         <label htmlFor="password">password</label>&nbsp;
@@ -71,7 +71,7 @@ const SignUp = (props) => {
           name="password"
           id="password"
           onChange={HandelNewUser}
-          //value={NewUser.password}
+          value={NewUser.password}
           required
         />
         <label htmlFor="password"> Repeat password</label>&nbsp;
@@ -80,7 +80,7 @@ const SignUp = (props) => {
           name="Repeatpassword"
           id=" Repeatpassword"
           onChange={HandelNewUser}
-          //value={NewUser.Repeatpassword}
+          value={NewUser.Repeatpassword}
           required
         />
         <button type="submit" onClick={HandelSignUp}>

@@ -1,13 +1,20 @@
 import React from "react";
 
-import StoringSignup from "./components/StoringSignup";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
 
+// import ProjectDemo from "./components/ProjectDemo";
 
 const App = () => {
-
+  // return <ProjectDemo />;
   return (
     <>
-   <StoringSignup/>
+      <Header />
+      <Navbar />
+      <Body />
+      <Footer />
     </>
   );
 };

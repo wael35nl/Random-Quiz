@@ -27,4 +27,4 @@ const StoringSignup = () => {
   );
 };
 
-export default StoringSignup;
+
