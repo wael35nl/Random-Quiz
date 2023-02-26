@@ -6,6 +6,10 @@
     top: 0;
 }
 
+.quizField span:first-child {
+    color: blue;
+}
+
 .li {
     margin: 1.5rem 0;
     cursor: pointer;
@@ -20,10 +24,10 @@
 }
 
 .btn {
-    /* width: fit-content; */
-    /* height: 2rem; */
     padding: 0.3rem;
     margin-right: 0.5rem;
+    width: fit-content;
+    height: 2rem;
     border: none;
     border-radius: 10px;
     font-size: 1.5rem;

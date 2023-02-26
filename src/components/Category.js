@@ -1,7 +1,8 @@
 import React from "react";
 import css from "../modular-css/Body.module.css";
 
-const Category = ({ data }) => {
+const Category = ({ data, count, right, wrong }) => {
+
     const categories = data.map((category, index) => <option key={category.id}>{index < 9 ? `0${index + 1}` : index + 1}- {category.category === '' ? 'Random' : category.category}</option>)
     return (<div className={css.score}>
         <select id={css.categories}>
@@ -9,14 +10,12 @@ const Category = ({ data }) => {
             {categories}
         </select>
         <div className={css.progressAlign}>
-        <div className={css.progress}>
-            <h3>Right Answers: {0} / {data.length}</h3>
-            <progress min={0} value={1} max={data.length} className={css.progressStyle}></progress>
-        </div>
-        <div className={css.progress}>
-            <h3>Wrong Answers: {0} / {data.length}</h3>
-            <progress min={0} value={1} max={data.length} className={css.progressStyle}></progress>
-        </div>
+            <div className={css.progress}>
+                <progress min={0} value={count + 1} max={data.length}></progress>
+                <h3>Total answers: ( {right + wrong} )</h3>
+                <h3>Correct: ( {right} completions ) FROM ( {data.length} ) questions</h3>
+                <h3>Incorrect: ( {wrong} attempts ) FROM ( {data.length} ) questions</h3>
+            </div>
         </div>
     </div>);
 }

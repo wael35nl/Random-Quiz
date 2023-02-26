@@ -10,6 +10,7 @@
     - Event handlers.
     - Fetch => then/catch , async/await => try/catch (optional CRUD).
     - Conditional rendering => is loading and error handling.
+    - Routing.
 4. Branch naming convention
     - Developer name - section name - feature/task
     - Example: Samir-category-adding_options
