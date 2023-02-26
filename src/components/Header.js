@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import css from "../modular-css/header.module.css";
 
