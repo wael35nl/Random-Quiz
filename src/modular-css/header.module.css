@@ -1,3 +1,8 @@
+html {
+    font-size: 62.5%;
+}
+
+
 .page_header {
     height: 6rem;
     background-color: rgb(0, 0, 105);
@@ -7,16 +12,8 @@
     position: relative;
 }
 
-.page_header h1 {
-    position: absolute;
-    left: 2%;
-    animation-name: title;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    transition: all ease-out;
-}
 
-@keyframes title {
+/*@keyframes title {
     25%{
         left: 30%;
         color: rgb(0, 0, 255);
@@ -29,4 +26,4 @@
         left: 90%;
         color: rgb(0, 255, 0);
     }
-}
+} */

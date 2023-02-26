@@ -17,7 +17,7 @@ const App = () => {
   // return <ProjectDemo />;
   const { data } = useFetch();
   return (<>
-    <Header />
+    <Header/>
     <Navbar />
     <Body data={data} />
     <Footer />

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-import styles from '../modular-css/header.module.css'
+import css from "../modular-css/header.module.css";
+
+import Title from "./Title";
 
 const Header = () => {
-    return <header className={styles.page_header}>
-        <h1>Quiz Time</h1>
+  return (
+    <header className={css.page_header}>
+      <Title />
     </header>
-}
+  );
+};
 
 export default Header;
