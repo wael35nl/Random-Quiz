@@ -15,7 +15,7 @@ body {
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 7rem;
   color: white;
 }
 
@@ -31,7 +31,7 @@ body {
 .progress {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 progress {
