@@ -26,5 +26,6 @@ const StoringSignup = () => {
     </div>
   );
 };
+export default StoringSignup
 
 

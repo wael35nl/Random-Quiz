@@ -28,9 +28,8 @@ const Input = (props) => {
       password: "",
     });
   };
-  const HandelPage = (event) => {
-    return <SignUp />;
-  };
+  
+  
 
   return (
     <section className={style.input__section} onSubmit={HandelSubmit}>
