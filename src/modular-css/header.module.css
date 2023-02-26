@@ -6,7 +6,7 @@ html {
 .page_header {
     height: 6rem;
     background-color: rgb(0, 0, 105);
-    color: red;
+    color: rgb(255, 231, 231);
     display: grid;
     place-items: center;
     position: relative;
