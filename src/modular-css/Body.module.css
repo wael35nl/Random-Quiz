@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(0, 0, 205);
+  background-color: rgb(31, 15, 76);
+  color: white;
 }
 
 #main {
@@ -10,6 +11,19 @@ body {
   min-height: 39.5rem;
 }
 
+.quizTitle {
+  color: rgb(70, 237, 249);
+  text-shadow: 0.5rem 0.5rem 1rem rgb(247, 0, 255), 0 0 1rem rgb(247, 0, 255), 0 0 0.2rem rgb(247, 0, 255);;
+  text-decoration: underline;
+  text-decoration-color: rgb(247, 0, 255);;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  border-bottom: 0.2rem solid rgb(255, 255, 255);
+  font-family: 'Beon Medium';
+}
+
+
 .score {
   grid-column: 1 / -1;
   margin-top: 1rem;
@@ -17,22 +31,41 @@ body {
   align-items: center;
   gap: 10rem;
   color: white;
+  justify-content: space-between;
 }
 
 #categories {
-  background-color: rgb(48, 136, 198);
-  font-size: larger;
+  background-color: rgb(44, 44, 139);
+  color: white;
+  font-size: 1.5rem;
   border-radius: 10px;
   text-indent: 0.5rem;
   width: 10rem;
-  height: 2rem;
+  height: 2.9rem;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
 }
 
 .progress {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.5rem;
 }
+
+.progressAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.progress h3 {
+  font-size: 1.5rem;
+}
+
 
 progress {
   width: 10rem;
@@ -40,8 +73,10 @@ progress {
   margin-top: 0.5rem;
 }
 
+
 #quizField {
-  background-color: rgb(48, 136, 198);
+  background-color: rgb(44, 44, 139);
+  border-radius: 1rem;
   padding: 1em;
   min-height: 35rem;
   display: flex;
@@ -50,7 +85,7 @@ progress {
 }
 
 #hintField {
-  background-image: url('../images/quiz-time.gif');
+  background-image: url('../images/ezgif.com-crop.gif');
   background-size: 100% 100%;
   min-height: 35rem;
 }

@@ -8,13 +8,15 @@ const Category = ({ data }) => {
             <option>Category</option>
             {categories}
         </select>
+        <div className={css.progressAlign}>
         <div className={css.progress}>
             <h3>Right Answers: {0} / {data.length}</h3>
-            <progress min={0} value={1} max={data.length}></progress>
+            <progress min={0} value={1} max={data.length} className={css.progressStyle}></progress>
         </div>
         <div className={css.progress}>
             <h3>Wrong Answers: {0} / {data.length}</h3>
-            <progress min={0} value={1} max={data.length}></progress>
+            <progress min={0} value={1} max={data.length} className={css.progressStyle}></progress>
+        </div>
         </div>
     </div>);
 }

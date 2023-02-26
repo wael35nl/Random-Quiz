@@ -12,22 +12,23 @@ html {
 
 nav {
   height: 4rem;
-  background-color: rgb(69, 69, 153);
+  background-color: rgb(44, 44, 139);
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding-left: 1em;
+  padding-left: 3rem;
+  box-shadow: 0.1rem 1rem 1rem -1rem rgb(247, 0, 255);
 }
 
 .option__container ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5vw;
 }
 
 .option__container a:hover {
-  color: rgb(235, 202, 202);
-  box-shadow: 0 0.4rem 0.4rem 0 rgba(22, 33, 190, 0.9);
+  color: rgb(110, 234, 253);
+  box-shadow: 0 0.4rem 0.4rem 0 rgb(47, 47, 126, 0.6);
   cursor: pointer;
 }
 
@@ -63,14 +64,14 @@ input:hover {
 }
 
 .input__section button {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-right: 2rem;
   width: 10rem;
   background-color: transparent;
   color: aliceblue;
-  border-radius: 0.6;
-  padding: 0.3em 0;
-  border: 1px solid rgb(54, 32, 32);
+  border-radius: 0.6rem;
+  padding: 0.3rem 0;
+  /* border: 0.2rem solid rgb(31, 15, 76); */
   box-shadow: 0 0.6 12px 0 rgba(48, 79, 253, 0.9);
   cursor: pointer;
 }
@@ -78,4 +79,5 @@ input:hover {
 .input__section button:hover {
   box-shadow: 0 0.6 18px 0 rgba(155, 161, 247, 0.9);
   transform: scale(1.1);
+  color: rgb(110, 234, 253);
 }

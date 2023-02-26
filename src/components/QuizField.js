@@ -8,7 +8,7 @@ const QuizField = ({ data }) => {
     const questions = data.map((question, index) => {
         if (index === count) {
             return <div key={question.id} className={styles.quizField}>
-                <h2>{index + 1}- {question.category === "" ? 'Random' : question.category}:<br /><br /> {question.question}</h2>
+                <h2>{index + 1}. {question.category === "" ? 'Random' : question.category}:<br /> {question.question}</h2>
                 <ul>
                     <li className={question.answers.answer_a === null ? '' : styles.li}>{question.answers.answer_a === null ? '' : `A : ${question.answers.answer_a}`}</li>
                     <li className={question.answers.answer_b === null ? '' : styles.li}>{question.answers.answer_b === null ? '' : `B : ${question.answers.answer_b}`}</li>
