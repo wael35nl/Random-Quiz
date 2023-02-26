@@ -1,15 +1,12 @@
-html {
-    font-size: 62.5%;
-}
-
-
 .page_header {
     height: 6rem;
-    background-color: rgb(0, 0, 105);
-    color: rgb(255, 231, 231);
+    background-color: rgb(31, 15, 76);
+    color: rgb(70, 237, 249);
     display: grid;
     place-items: center;
     position: relative;
+    box-shadow: 0.1rem 1rem 1rem -1rem rgb(247, 0, 255);
+    /* border-bottom: 0.1rem solid rgb(247, 0, 255); */
 }
 
 
