@@ -11,7 +11,7 @@ const Body = (props) => {
     <div id={css.main}>
       <Category data={data} />
       <section id={css.quizField}>
-        <h2>Quiz</h2>
+        <h2 className={css.quizTitle}>Quiz</h2>
         <QuizField data={data} />
       </section>
       <section id={css.hintField}></section>

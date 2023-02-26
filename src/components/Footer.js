@@ -5,12 +5,12 @@ import styles from '../modular-css/footer.module.css'
 
 const Footer = () => {
     return <footer className={styles.page_footer}>
-        <section>
-            <h2>Created with <span style={{ color: 'red' }}>&hearts;</span> by: Estella | Samir | Wael</h2>
+        <section className={styles.createdBy}>
+            <h2>Created with <span className={styles.heart}>&hearts;</span> by: Estella | Samir | Wael</h2>
             <div className={styles.footer_images}><img src={require('../images/Wael-AbuRayya.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
         </section>
         <section className={styles.contact}>
-            <h2>Contact</h2>
+            <h2>Contact:</h2>
             <div>
                 <ul>
                     <li>Email: Alex@gmail.com</li>
@@ -23,16 +23,16 @@ const Footer = () => {
             <div>
                 <h2>Follow Us</h2>
                 <div className={styles.social_media_icon}>
-                    <FaFacebook />
-                    <FaYoutube />
-                    <FaTwitter />
+                    <a href="https://www.facebook.com/"><FaFacebook /></a>
+                    <a href="https://www.youtube.com/"><FaYoutube /></a>
+                    <a href="https://twitter.com/"><FaTwitter /></a>
                 </div>
             </div>
             <div>
                 <h2>Find Us</h2>
                 <div className={styles.social_media_icon2}>
-                    <FaGithub />
-                    <FaLinkedin />
+                <a href="https://github.com/"><FaGithub /></a>
+                <a href="https://www.linkedin.com/"> <FaLinkedin /></a>
                 </div>
             </div>
         </section>
