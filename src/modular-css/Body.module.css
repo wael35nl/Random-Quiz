@@ -20,7 +20,7 @@ body {
   padding-bottom: 0.5rem;
   font-size: 3rem;
   border-bottom: 0.2rem solid rgb(255, 255, 255);
-  font-family: 'Beon Medium';
+  font-family: 'Beon Medium',  sans-serif;
 }
 
 
