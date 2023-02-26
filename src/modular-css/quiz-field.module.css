@@ -3,12 +3,17 @@
     border-bottom: 2px solid white;
 }
 
+.quizField span:first-child {
+    color: blue;
+}
+
 .li {
     margin: 1.5rem 0;
     cursor: pointer;
     padding: 0.2em 0.4em;
     font-size: 1.5rem;
     width: fit-content;
+    border-radius: 10px;
 }
 
 .li:hover {
@@ -19,7 +24,7 @@
     width: fit-content;
     height: 2rem;
     padding: 0.5em;
-    margin-right: 0.5rem;
+    margin-right: 2rem;
     border: none;
     border-radius: 10px;
     font-size: 1rem;

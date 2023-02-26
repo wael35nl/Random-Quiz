@@ -31,12 +31,12 @@ body {
 .progress {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 progress {
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
   margin-top: 0.5rem;
 }
 
