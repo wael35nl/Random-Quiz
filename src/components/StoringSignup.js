@@ -21,8 +21,8 @@ const StoringSignup = () => {
   };
 
   return (
-    <div>
-      <SignUp HandelNewUser={HandelNewUser} />
-    </div>
+    <SignUp HandelNewUser={HandelNewUser} />
   );
 };
+
+export default StoringSignup;

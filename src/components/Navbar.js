@@ -1,24 +1,23 @@
-import React from "react";
-// import React, { useState } from "react";
-// import { v4 as uuidv4 } from "uuid";
+import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import style from "../modular-css/navbar.module.css";
 
-// import Input from "./Input";
+import Input from "./Input";
 
 const Navbar = () => {
-  // const NewInput = [
-  //   {
-  //     id: uuidv4(),
-  //     email: "",
-  //     password: "",
-  //   },
-  // ];
-  // const [values, setValues] = useState(NewInput);
-  // const NewValues = (value) => {
-  //   setValues((PrevValue) => [...PrevValue, value]);
-  //   console.log(values);
-  // };
+  const NewInput = [
+    {
+      id: uuidv4(),
+      email: "",
+      password: "",
+    },
+  ];
+  const [values, setValues] = useState(NewInput);
+  const NewValues = (value) => {
+    setValues((PrevValue) => [...PrevValue, value]);
+    console.log(values);
+  };
   return (
     <nav>
       <section className={style.option__container}>
@@ -34,16 +33,16 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </section>
+        {/* </section>
       <section className={style.input__section} onSubmit>
         <label htmlFor="email">Email</label>&nbsp;
         <input type="email" name="email" id="email" onChange required />
         <label htmlFor="password">Password</label>&nbsp;
         <input type="password" name="password" id="password" onchange required />
         <button type="submit">LOG IN</button>
-        <button type="submit">SIGN UP</button>
+        <button type="submit">SIGN UP</button> */}
       </section>
-      {/* <Input NewValues={NewValues} /> */}
+      <Input NewValues={NewValues} />
     </nav>
   );
 };

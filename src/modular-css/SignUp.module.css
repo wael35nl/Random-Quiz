@@ -4,12 +4,12 @@
   box-sizing: border-box;
   list-style: none;
 }
-body {
+
+.SignUp_container {
     background: url("../images/background.jpg");
     background-size: 100%;
     background-position:top;
     background: cover;
-
 }
 
 .SignUp {
@@ -22,7 +22,6 @@ body {
   width: 25rem;
   border-radius: 2rem;
   margin-left: 45rem;
-  
 }
 
 .SignUp h2 {
@@ -43,16 +42,16 @@ body {
   margin-top: 30px;
 }
 
-.form label, input, button {
+.form label, input, .btn {
     display: block;
     width: 100%;
     padding: 0;
     border: none;
     outline: none;
     box-sizing: border-box;
-  }
+}
 
-  .form input {
+.form input {
     background: #ecf0f3;
     padding: 10px;
     padding-left: 20px;
@@ -62,7 +61,7 @@ body {
     box-shadow:  6px 6px 6px #59a8f7,  -6px -6px 6px rgb(252, 220, 220);
   }
   
-  .form button {
+.form button {
     color: white;
     margin-top: 20px;
     background: #1DA1F2;
@@ -73,4 +72,4 @@ body {
     box-shadow: 6px 6px 6px #218efa, -6px -6px 6px rgb(28, 141, 235);
     transition: 0.5s;
     margin-bottom: 1rem;
-  }
+}
