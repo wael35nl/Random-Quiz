@@ -1,0 +1,66 @@
+import React from "react";
+import image from "../images/ezgif.com-crop.gif";
+import css from "../modular-css/Body.module.css";
+
+const getQuestionObjectById = (data, id) => {
+  for (let index = 0; index < data.length; index++) {
+    //console.log(id + " " + data[index].id);
+    if (id == data[index].id) {
+      console.log("found");
+      return data[index];
+    }
+  }
+  return null;
+};
+
+const Explanation = ({ data, id, showExplanation, setShowExplanation }) => {
+  console.log("id: " + id);
+  const questionObj = getQuestionObjectById(data, id);
+
+  if (showExplanation) {
+    if (questionObj.explanation != null) {
+      return (
+        <div>
+          <h3>{questionObj.explanation}</h3>
+          <button
+            onClick={() => {
+              setTimeout(() => {
+                setShowExplanation(false);
+              }, 1);
+            }}
+          >
+            X
+          </button>
+        </div>
+      );
+    } else {
+      return (
+        <div className={css.explanation}>
+          <button
+            onClick={() => {
+              setTimeout(() => {
+                setShowExplanation(false);
+              }, 1);
+            }} className={css.explanationBtn}
+          >
+            X
+          </button>
+          <h3>
+            Unfortunately, we don't have an explanation for this right now. Here
+            is a useful tool to research:{" "}
+            <a href="https://www.w3schools.com/">W3Schools</a>
+          </h3>
+        </div>
+      );
+    }
+  }
+
+  return (
+    <div className={css.gifParent}>
+      <img src={image} className={css.gif}></img>
+    </div>
+  );
+};
+//<div className={css.gif}></div>;
+
+export default Explanation;

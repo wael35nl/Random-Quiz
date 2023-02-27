@@ -31,7 +31,12 @@ footer img {
 
 .heart {
     color: rgb(255, 0, 179);
-    text-shadow: 0.1rem 1rem 1rem -1rem rgb(70, 237, 249);
+    /* text-shadow: 0.1rem 1rem 1rem -1rem rgb(70, 237, 249); */
+}
+
+.heart:hover {
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 .contact h2 {

@@ -2,16 +2,23 @@ import React, { useState } from "react";
 
 import css from "../modular-css/Title.module.css";
 
+let firstClick = false;
+
 const Title = () => {
   const [animation, setAnimation] = useState(0);
   const handleClick = () => {
-    if (animation < 8) {
-      setAnimation(animation + 1);
-      delay(5000).then(() => {
-        setAnimation(animation + 2);
-      });
+    if (!firstClick) {
+      alert('Easter Egg No.1 Found! Can you find any more?')
+      firstClick = true;
     } else {
-      setAnimation(0);
+      if (animation < 8) {
+        setAnimation(animation + 1);
+        delay(5000).then(() => {
+          setAnimation(animation + 2);
+        });
+      } else {
+        setAnimation(0);
+      }
     }
   };
 
