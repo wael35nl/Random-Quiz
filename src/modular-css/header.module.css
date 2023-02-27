@@ -1,0 +1,9 @@
+.page_header {
+    height: 6rem;
+    background-color: rgb(31, 15, 76);
+    color: rgb(70, 237, 249);
+    display: grid;
+    place-items: center;
+    position: relative;
+    box-shadow: 0.1rem 1rem 1rem -1rem rgb(247, 0, 255);
+}

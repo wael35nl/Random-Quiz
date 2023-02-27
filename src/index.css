@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+.mainContent {
+  height: 100vh;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-family: 'Beon Medium';
+  color: rgb(70, 237, 249);
+  text-shadow: 1rem 1rem 1rem rgb(247, 0, 255), 0 0 1rem rgb(247, 0, 255), 0 0 0.2rem rgb(247, 0, 255);
+  border-bottom: 0.3rem solid rgb(247, 0, 255);
+}
+
+

@@ -1,0 +1,83 @@
+.page_footer {
+    background-color: rgb(31, 15, 76);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5em 3em;
+}
+
+.createdBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footer_images {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    padding-right: 0.5em;
+    margin-top: 0.5rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.heart {
+    color: rgb(255, 0, 179);
+}
+
+.heart:hover {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.contact h2 {
+    border-bottom: 0.2rem solid white;
+    padding-bottom: 0;
+}
+
+.contact li {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+.social_media {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.social_media_icon a:hover, .social_media_icon2 a:hover {
+    color: rgb(70, 237, 249);
+    text-decoration: none;
+}
+
+.social_media h2 {
+    text-align: center;
+}
+
+.social_media_icon, .social_media_icon2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.social_media_icon a, .social_media_icon2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.social_media_icon2 {
+    grid-template-columns: repeat(2, 1fr);
+}
