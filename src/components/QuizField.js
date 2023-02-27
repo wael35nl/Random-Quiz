@@ -10,6 +10,7 @@ const QuizField = ({
   setWrong,
   setId,
   setShowExplanation,
+  setEnd
 }) => {
   useEffect(() => {
     setId(data[count].id);
@@ -180,7 +181,11 @@ const QuizField = ({
       >
         Reset / New Quiz
       </button>
-      <button className={styles.btn} onClick={() => { }}>
+      <button className={styles.btn} onClick={() => {
+          setTimeout(() => {
+            setEnd(true);
+          }, 1);
+        }}>
         End The Quiz
       </button>
     </div>
