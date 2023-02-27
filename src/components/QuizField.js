@@ -1,5 +1,4 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import styles from "../modular-css/quiz-field.module.css";
 
@@ -12,13 +11,11 @@ const QuizField = ({
   setId,
   setShowExplanation,
 }) => {
-  // eslint-disable-next-line
-
-  console.log("count: " + count);
-  console.log(data[count].id);
   useEffect(() => {
     setId(data[count].id);
+    // eslint-disable-next-line
   }, [count, data]);
+  // eslint-disable-next-line
   const questions = data.map((question, index) => {
     const determineAnswer = (element, event) => {
       if (element === "true") {
@@ -31,7 +28,6 @@ const QuizField = ({
     };
 
     if (index === count) {
-      console.log("question.id" + question.id);
       return (
         <div key={question.id} className={styles.quizField}>
           <h2>
@@ -46,8 +42,8 @@ const QuizField = ({
                   question.difficulty === "Easy"
                     ? "#55a630"
                     : question.difficulty === "Medium"
-                    ? "rgb(255, 165, 0)"
-                    : "#00b4d8",
+                      ? "rgb(255, 165, 0)"
+                      : "#00b4d8",
               }}
             >
               {question.difficulty}
@@ -184,7 +180,7 @@ const QuizField = ({
       >
         Reset / New Quiz
       </button>
-      <button className={styles.btn} onClick={() => {}}>
+      <button className={styles.btn} onClick={() => { }}>
         End The Quiz
       </button>
     </div>

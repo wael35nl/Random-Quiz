@@ -7,8 +7,8 @@ let firstClick = false;
 const Footer = () => {
     const handleClick = () => {
         if (!firstClick) {
-          alert('Easter Egg No.2 Found! ♡')
-          firstClick = true;
+            alert('Easter Egg No.2 Found! ♡')
+            firstClick = true;
         };
     }
 
@@ -30,7 +30,7 @@ const Footer = () => {
             <div>
                 <h2>Follow Us</h2>
                 <div className={styles.social_media_icon}>
-                    <a href="https://www.facebook.com/" aria-label='Facebok'><FaFacebook /></a>
+                    <a href="https://www.facebook.com/" aria-label='Facebook'><FaFacebook /></a>
                     <a href="https://www.youtube.com/" aria-label='YouTube'><FaYoutube /></a>
                     <a href="https://twitter.com/" aria-label='Twitter'><FaTwitter /></a>
                 </div>
@@ -38,8 +38,8 @@ const Footer = () => {
             <div>
                 <h2>Find Us</h2>
                 <div className={styles.social_media_icon2}>
-                <a href="https://github.com/" aria-label='GitHub'><FaGithub /></a>
-                <a href="https://www.linkedin.com/" aria-label='LinkedIn'> <FaLinkedin /></a>
+                    <a href="https://github.com/" aria-label='GitHub'><FaGithub /></a>
+                    <a href="https://www.linkedin.com/" aria-label='LinkedIn'> <FaLinkedin /></a>
                 </div>
             </div>
         </section>

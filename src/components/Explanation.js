@@ -4,9 +4,7 @@ import css from "../modular-css/Body.module.css";
 
 const getQuestionObjectById = (data, id) => {
   for (let index = 0; index < data.length; index++) {
-    //console.log(id + " " + data[index].id);
-    if (id == data[index].id) {
-      console.log("found");
+    if (id === data[index].id) {
       return data[index];
     }
   }
@@ -14,7 +12,6 @@ const getQuestionObjectById = (data, id) => {
 };
 
 const Explanation = ({ data, id, showExplanation, setShowExplanation }) => {
-  console.log("id: " + id);
   const questionObj = getQuestionObjectById(data, id);
 
   if (showExplanation) {
@@ -61,6 +58,5 @@ const Explanation = ({ data, id, showExplanation, setShowExplanation }) => {
     </div>
   );
 };
-//<div className={css.gif}></div>;
 
 export default Explanation;

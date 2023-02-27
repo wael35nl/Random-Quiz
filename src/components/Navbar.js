@@ -33,14 +33,6 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        {/* </section>
-      <section className={style.input__section} onSubmit>
-        <label htmlFor="email">Email</label>&nbsp;
-        <input type="email" name="email" id="email" onChange required />
-        <label htmlFor="password">Password</label>&nbsp;
-        <input type="password" name="password" id="password" onchange required />
-        <button type="submit">LOG IN</button>
-        <button type="submit">SIGN UP</button> */}
       </section>
       <Input NewValues={NewValues} />
     </nav>
