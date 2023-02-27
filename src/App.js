@@ -12,10 +12,21 @@ import css from "./index.css";
 
 const App = () => {
   // return <ProjectDemo />;
-  const { data } = useFetch();
-  if (data.length === 0) {
-    return <h1 className={css.loading}>Loading...</h1>;
+  const { data, error, isLoading } = useFetch()
+  if (isLoading) {
+    return (
+    <section className={css.loadingDiv}>
+    <h1 className={css.loading}>Loading...</h1>
+    </section>
+    )
+  } else if (error) {
+    return (
+      <section className={css.loadingDiv}>
+        <h1 className={css.loading}>{error.message}</h1>
+      </section>
+      )
   }
+
   return (
     <div className={css.mainContent}>
       <Header />
