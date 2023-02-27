@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import { v4 as uuidv4 } from "uuid";
 
 import style from "../modular-css/navbar.module.css";
-import SignUp from "./SignUp";
+
 
 const Input = (props) => {
   const [InputUsers, setInputUsers] = useState({
@@ -29,9 +30,10 @@ const Input = (props) => {
       password: "",
     });
   };
-
+  const page = useNavigate();
   const HandelPage = (event) => {
-    return <SignUp />;
+    console.log("hello");
+    page("/StoringSignup");
   };
 
   return (

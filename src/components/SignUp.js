@@ -12,8 +12,8 @@ const SignUp = (props) => {
     repeatPassword: "",
   });
   const HandelNewUser = (event) => {
-    console.log(event.target.name);
-    console.log(event.target.value);
+    //console.log(event.target.name);
+    //console.log(event.target.value);
     setNewUser((prevInput) => {
       return { ...prevInput, [event.target.name]: event.target.value };
     });
@@ -31,6 +31,7 @@ const SignUp = (props) => {
       password: "",
       repeatPassword: "",
     });
+    
   };
 
   return (
@@ -88,7 +89,7 @@ const SignUp = (props) => {
             Sign Up
           </button>
         </div>
-        f
+       
       </form>
     </div>
   );
