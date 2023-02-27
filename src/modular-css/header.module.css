@@ -6,21 +6,4 @@
     place-items: center;
     position: relative;
     box-shadow: 0.1rem 1rem 1rem -1rem rgb(247, 0, 255);
-    /* border-bottom: 0.1rem solid rgb(247, 0, 255); */
 }
-
-
-/*@keyframes title {
-    25%{
-        left: 30%;
-        color: rgb(0, 0, 255);
-    }
-    50%{
-        left: 60%;
-        color: orange;
-    }
-    75%{
-        left: 90%;
-        color: rgb(0, 255, 0);
-    }
-} */

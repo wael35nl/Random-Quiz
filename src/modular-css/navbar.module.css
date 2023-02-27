@@ -34,7 +34,6 @@ nav {
 
 .option__container a {
   color: white;
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: 'Teko', sans-serif;;
   border-radius: 0.6rem;
   font-size: 1.5rem;
@@ -44,7 +43,6 @@ nav {
 .input__section {
   display: flex;
   align-items: center;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   font-family: 'Teko', sans-serif;;
   font-size: 1.5rem;
 }
@@ -71,7 +69,6 @@ input:hover {
   color: aliceblue;
   border-radius: 0.6rem;
   padding: 0.3rem 0;
-  /* border: 0.2rem solid rgb(31, 15, 76); */
   box-shadow: 0 0.6 12px 0 rgba(48, 79, 253, 0.9);
   cursor: pointer;
 }

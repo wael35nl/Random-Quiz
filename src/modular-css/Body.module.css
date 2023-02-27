@@ -35,7 +35,6 @@ body {
   margin-top: 1rem;
   display: flex;
   align-items: center;
-  gap: 3rem;
   color: white;
   justify-content: space-between;
 }
@@ -92,16 +91,6 @@ progress {
   justify-content: space-between;
   width: 100%;
 }
-/*
-.gif {
-  background-image: url("../images/ezgif.com-crop.gif");
-  background-size: 100% 100%;
-  height: 100%;
-  object-fit: none;
-  border-radius: 1rem;
-  overflow: hidden;
-}
-*/
 
 .gif {
   max-width: 100%;
@@ -112,6 +101,7 @@ progress {
   overflow: hidden;
   display: block;
 }
+
 .gifParent {
   height: 100%;
   width: fit-content;
@@ -121,9 +111,6 @@ progress {
 .explanation {
   font-size: 2.5rem;
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
   justify-content: left;
 }
 

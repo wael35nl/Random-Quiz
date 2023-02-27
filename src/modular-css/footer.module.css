@@ -18,7 +18,7 @@
 .footer_images {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 1.6rem;
     padding-right: 0.5em;
     margin-top: 0.5rem;
 }
@@ -31,7 +31,6 @@ footer img {
 
 .heart {
     color: rgb(255, 0, 179);
-    /* text-shadow: 0.1rem 1rem 1rem -1rem rgb(70, 237, 249); */
 }
 
 .heart:hover {
@@ -40,7 +39,6 @@ footer img {
 }
 
 .contact h2 {
-    /* text-decoration: underline; */
     border-bottom: 0.2rem solid white;
     padding-bottom: 0;
 }
@@ -83,4 +81,3 @@ footer img {
 .social_media_icon2 {
     grid-template-columns: repeat(2, 1fr);
 }
-
