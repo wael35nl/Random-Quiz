@@ -138,3 +138,31 @@ progress {
   cursor: pointer;
   background-color: rgb(147, 20, 152);
 }
+
+.thanksContainer{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.thanks {
+  font-size: 5rem;
+}
+
+.btn {
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(31, 15, 76);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: rgb(255, 0, 174);
+  cursor: pointer;
+}

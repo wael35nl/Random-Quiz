@@ -32,6 +32,7 @@
 .btn:hover {
   opacity: 0.8;
   color: rgb(255, 0, 174);
+  cursor: pointer;
 }
 
 .btn:disabled {
