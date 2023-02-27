@@ -15,7 +15,7 @@ const Footer = () => {
     return <footer className={styles.page_footer}>
         <section className={styles.createdBy}>
             <h2>Created with <span className={styles.heart} onClick={handleClick}>&hearts;</span> by: Estella | Samir | Wael</h2>
-            <div className={styles.footer_images}><img src={require('../images/Estella.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
+            <div className={styles.footer_images}><img src={require('../images/Estella.jpg')} alt="Estella" /><img src={require('../images/Samir.avif')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
         </section>
         <section className={styles.contact}>
             <h2>Contact:</h2>

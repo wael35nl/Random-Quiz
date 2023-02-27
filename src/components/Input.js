@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 import style from "../modular-css/navbar.module.css";
-import SignUp from "./SignUp";
 
 const Input = (props) => {
   const [InputUsers, setInputUsers] = useState({
@@ -11,27 +10,20 @@ const Input = (props) => {
   });
 
   const HandelInput = (event) => {
-    console.log(event.target.name);
-    console.log(event.target.value);
     setInputUsers((prevInput) => {
       return { ...prevInput, [event.target.name]: event.target.value };
     });
   };
 
   const HandelSubmit = (event) => {
-    alert("WELCOME");
+    alert(`welcome ${InputUsers.email}`);
     event.preventDefault();
     const newInput = { id: uuidv4(), InputUsers };
     props.NewValues(newInput);
-    console.log(newInput);
     setInputUsers({
       email: "",
       password: "",
     });
-  };
-
-  const HandelPage = (event) => {
-    return <SignUp />;
   };
 
   return (
@@ -57,7 +49,7 @@ const Input = (props) => {
       <button type="submit" onClick={HandelSubmit}>
         LOG IN
       </button>
-      <button type="submit" onClick={HandelPage}>
+      <button type="submit">
         Sign Up
       </button>
     </section>

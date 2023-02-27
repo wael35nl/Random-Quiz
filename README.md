@@ -52,7 +52,6 @@ Not done:
 2. Record a video.
 3. Ongoing:
     - Fetch => then/catch , async/await => try/catch (optional CRUD).
-    - Conditional rendering => is loading and error handling.
     - Routing.
 4. Timer.
 5. Saving user's answers.
