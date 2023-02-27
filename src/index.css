@@ -19,14 +19,12 @@ body {
   height: 100vh;
 }
 
-.loadingDiv {
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.loading {
+h1 {
   text-align: center;
+  font-size: 7rem;
+  font-family: 'Beon Medium';
+  color: rgb(70, 237, 249);
+  text-shadow: 1rem 1rem 1rem rgb(247, 0, 255), 0 0 1rem rgb(247, 0, 255), 0 0 0.2rem rgb(247, 0, 255);
+  border-bottom: 0.3rem solid rgb(247, 0, 255);
 }
