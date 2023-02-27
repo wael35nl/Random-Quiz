@@ -10,7 +10,7 @@ const Category = ({ data, count, right, wrong }) => {
   ));
   return (
     <div className={css.score}>
-      <select id={css.categories}>
+      <select aria-label="Category" id={css.categories}>
         <option>Category</option>
         {categories}
       </select>

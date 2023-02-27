@@ -57,7 +57,7 @@ const Explanation = ({ data, id, showExplanation, setShowExplanation }) => {
 
   return (
     <div className={css.gifParent}>
-      <img src={image} className={css.gif}></img>
+      <img src={image} alt='Quiz Time Logo' className={css.gif}></img>
     </div>
   );
 };
