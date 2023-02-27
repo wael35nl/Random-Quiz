@@ -2,12 +2,20 @@ import React from "react";
 import { FaFacebook, FaYoutube, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import styles from '../modular-css/footer.module.css'
+let firstClick = false;
 
 const Footer = () => {
+    const handleClick = () => {
+        if (!firstClick) {
+          alert('Easter Egg No.2 Found! ♡')
+          firstClick = true;
+        };
+    }
+
     return <footer className={styles.page_footer}>
         <section className={styles.createdBy}>
-            <h2>Created with <span className={styles.heart}>&hearts;</span> by: Estella | Samir | Wael</h2>
-            <div className={styles.footer_images}><img src={require('../images/Wael-AbuRayya.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
+            <h2>Created with <span className={styles.heart} onClick={handleClick}>&hearts;</span> by: Estella | Samir | Wael</h2>
+            <div className={styles.footer_images}><img src={require('../images/Estella.jpg')} alt="Estella" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Samir" /><img src={require('../images/Wael-AbuRayya.jpg')} alt="Wael" /></div>
         </section>
         <section className={styles.contact}>
             <h2>Contact:</h2>

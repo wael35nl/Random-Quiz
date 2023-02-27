@@ -45,7 +45,7 @@ const Input = (props) => {
         value={InputUsers.email}
         required
       />
-      <label htmlFor="password">password</label>&nbsp;
+      <label htmlFor="password">Password</label>&nbsp;
       <input
         type="password"
         name="password"

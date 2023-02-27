@@ -1,46 +1,42 @@
 .quizField {
-    margin: 1rem 0 2rem 0rem;
-    border-bottom: 0.2rem solid white;
-    color: white;
-    font-size: 1.5rem;
-    top: 0;
-}
-
-.quizField span:first-child {
-    color: blue;
+  margin: 1rem 0 2rem 0rem;
+  border-bottom: 0.2rem solid white;
+  color: white;
+  font-size: 1.5rem;
+  top: 0;
 }
 
 .li {
-    margin: 1.5rem 0;
-    cursor: pointer;
-    padding: 0.2em 0.4em;
-    font-size: 1.8rem;
-    width: fit-content;
-    border-radius: 1.2rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+  font-size: 1.8rem;
+  width: fit-content;
+  border-radius: 1.2rem;
 }
 
 .li:hover {
-    background-color: rgb(156, 21, 134);
+  background-color: rgb(156, 21, 134);
 }
 
 .btn {
-    padding: 0.3rem;
-    margin-right: 0.5rem;
-    width: fit-content;
-    height: 2rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgb(31, 15, 76);
+  /* width: fit-content; */
+  /* height: 2rem; */
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(31, 15, 76);
 }
 
 .btn:hover {
-    opacity: 0.8;
-    color: rgb(255, 0, 174);
+  opacity: 0.8;
+  color: rgb(255, 0, 174);
 }
 
 .btn:disabled {
-    opacity: 1;
-    color: gray;
+  opacity: 1;
+  color: gray;
 }
