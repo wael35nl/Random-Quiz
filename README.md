@@ -23,9 +23,9 @@ To be added...
 
 &nbsp;
 
-## Project link (demo)
+## [Project link](https://friendly-zuccutto-6ceda0.netlify.app/)
 
-To be added...
+&nbsp;
 
 ### Project requirements (only for the dev team, and to be replaced with a screen shot of the running project)
 
