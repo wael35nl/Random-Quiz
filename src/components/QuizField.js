@@ -19,10 +19,10 @@ const QuizField = ({
   const questions = data.map((question, index) => {
     const determineAnswer = (element, event) => {
       if (element === "true") {
-        event.style.backgroundColor = "green";
+        event.style.backgroundColor = "#3a5a40";
         setRight((right) => right + 1);
       } else {
-        event.style.backgroundColor = "red";
+        event.style.backgroundColor = "#8c1c13";
         setWrong((wrong) => wrong + 1);
       }
     };
