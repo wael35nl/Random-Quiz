@@ -6,8 +6,10 @@
 
 - public
 - src
-  - images
   - components
+  - hooks
+  - images
+  - modular-css
 
 &nbsp;
 
@@ -23,7 +25,7 @@ To be added...
 
 &nbsp;
 
-## [Project link](https://friendly-zuccutto-6ceda0.netlify.app/)
+## [Project demo](https://friendly-zuccutto-6ceda0.netlify.app/)
 
 &nbsp;
 
@@ -48,16 +50,9 @@ To be added...
 
 Not done:
 
-1. Deployment.
-2. Record a video.
-3. Ongoing:
-    - Fetch => then/catch , async/await => try/catch (optional CRUD).
-    - Routing.
-4. Timer.
-5. Saving user's answers.
-6. Project structure.
-7. Project README file.
-
-Bugs:
-
-1. If the uses clicks on the answer element, he still can click again.
+1. CRUD.
+2. Routing.
+3. Timer.
+4. Saving user's answers.
+5. Project structure.
+6. Project README file.
