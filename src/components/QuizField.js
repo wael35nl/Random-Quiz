@@ -1,30 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "../modular-css/quiz-field.module.css";
 
-const QuizField = ({
-  data,
-  count,
-  setCount,
-  setRight,
-  setWrong,
-  setId,
-  setShowExplanation,
-  setEnd
-}) => {
+const QuizField = ({ data, count, setCount, setRight, setWrong, setId, setShowExplanation, setEnd }) => {
+
   useEffect(() => {
     setId(data[count].id);
     // eslint-disable-next-line
   }, [count, data]);
+
+  const [isActive, setIsActive] = useState(true);
   // eslint-disable-next-line
   const questions = data.map((question, index) => {
     const determineAnswer = (element, event) => {
-      if (element === "true") {
-        event.style.backgroundColor = "#3a5a40";
-        setRight((right) => right + 1);
-      } else {
-        event.style.backgroundColor = "#8c1c13";
-        setWrong((wrong) => wrong + 1);
+      if (isActive) {
+        if (element === "true") {
+          event.style.backgroundColor = "#3a5a40";
+          setRight((right) => right + 1);
+          setIsActive(false);
+        } else {
+          event.style.backgroundColor = "#8c1c13";
+          setWrong((wrong) => wrong + 1);
+          setIsActive(false);
+        }
       }
     };
 
@@ -147,6 +145,7 @@ const QuizField = ({
         onClick={() => {
           setTimeout(() => {
             setCount((count) => count + 1);
+            setIsActive(true);
           }, 1);
         }}
       >
@@ -182,10 +181,10 @@ const QuizField = ({
         Reset / New Quiz
       </button>
       <button className={styles.btn} onClick={() => {
-          setTimeout(() => {
-            setEnd(true);
-          }, 1);
-        }}>
+        setTimeout(() => {
+          setEnd(true);
+        }, 1);
+      }}>
         End The Quiz
       </button>
     </div>

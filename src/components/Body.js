@@ -18,11 +18,7 @@ const Body = ({ data }) => {
     <div id={css.main}>
       <Category data={data} count={count} right={right} wrong={wrong} />
       {end ? <EndQuiz /> : <section id={css.quizField}>
-        <h2>
-          Quiz - - ( Multiple answers possible, for the best score try to find
-          the correct answer ASAP... GOOD LUCK !! )
-        </h2>
-          <QuizField
+        <QuizField
           data={data}
           count={count}
           setCount={setCount}
@@ -31,8 +27,8 @@ const Body = ({ data }) => {
           setId={setId}
           setShowExplanation={setShowExplanation}
           setEnd={setEnd}
-        /> 
-        
+        />
+
       </section>}
       <section id={css.hintField}>
         <Explanation
