@@ -6,26 +6,23 @@ const useFetch = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://quizapi.io/api/v1/questions?apiKey=VwnzWX5vO3Zh9IsL0rEkJCg7eLS297WFjr5Ois8O')
-            .then((res) => {
-                if (!res.ok) {
-                    throw new Error('Failed to load...');
-                }
-                return res.json()
-            })
-            .then((json) => {
-                setData(json);
+        const fetchData = async () => {
+            try {
+                const data = await fetch('https://quizapi.io/api/v1/questions?apiKey=VwnzWX5vO3Zh9IsL0rEkJCg7eLS297WFjr5Ois8O');
+                if (!data.ok) throw new Error('Failed to load...');
+                const jsonData = await data.json();
+                setData(jsonData);
+                setIsLoading(false);
                 setError(null);
+            } catch (error) {
+                setData([]);
                 setIsLoading(false);
-            })
-            .catch((error) => {
-                setError(error);
-            })
-            .finally(() => {
-                setIsLoading(false);
-            })
+                setError(error.message);
+            }
+        }
+        fetchData();
     }, [])
-    return ( { data, error, isLoading }
+    return ({ data, error, isLoading }
     );
 }
 
