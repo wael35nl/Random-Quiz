@@ -23,7 +23,7 @@ const App = () => {
   } else if (error) {
     return (
       <section className={css.loadingDiv}>
-        <h1 className={css.loading}>{error.message}</h1>
+        <h1 className={css.loading}>{error}</h1>
       </section>
     )
   }
