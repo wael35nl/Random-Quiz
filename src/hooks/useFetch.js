@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 
 const useFetch = () => {
     const [data, setData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(false);
-    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setIsLoading(true);
         const fetchData = async () => {
             try {
                 const data = await fetch('https://quizapi.io/api/v1/questions?apiKey=VwnzWX5vO3Zh9IsL0rEkJCg7eLS297WFjr5Ois8O');

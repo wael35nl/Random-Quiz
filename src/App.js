@@ -8,34 +8,38 @@ import useFetch from "./hooks/useFetch";
 
 // import ProjectDemo from "./components/ProjectDemo";
 
-import css from "./index.css";
+import "./index.css";
 
 const App = () => {
   // return <ProjectDemo />;
   const { data, error, isLoading } = useFetch();
 
-  if (isLoading) {
-    return (
-      <section className={css.loadingDiv}>
-        <h1 className={css.loading}>Loading...</h1>
-      </section>
-    )
-  } else if (error) {
-    return (
-      <section className={css.loadingDiv}>
-        <h1 className={css.loading}>{error}</h1>
-      </section>
-    )
-  }
+  let contentElement;
 
-  return (
-    <div className={css.mainContent}>
+  if (data.length > 0) {
+    contentElement = <div>
       <Header />
       <Navbar />
       <Body data={data} />
       <Footer />
     </div>
-  );
+  }
+
+  if (isLoading) {
+    contentElement = <section className='loading'>
+      <h1>Loading the Quiz...</h1>
+    </section>
+  }
+
+  if (error) {
+    contentElement = <section className='loading'>
+      <h1>{error}</h1>
+    </section>
+  }
+
+  return (<>
+    {contentElement}
+  </>);
 };
 
 export default App;
