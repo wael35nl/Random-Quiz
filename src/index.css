@@ -29,4 +29,9 @@ h1 {
   border-bottom: 0.3rem solid rgb(247, 0, 255);
 }
 
-
+.loading {
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
