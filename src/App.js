@@ -12,7 +12,8 @@ import css from "./index.css";
 
 const App = () => {
   // return <ProjectDemo />;
-  const { data, error, isLoading } = useFetch()
+  const { data, error, isLoading } = useFetch();
+
   if (isLoading) {
     return (
       <section className={css.loadingDiv}>
