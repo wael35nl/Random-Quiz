@@ -1,23 +1,11 @@
-import React, { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React from "react";
 
 import style from "../modular-css/navbar.module.css";
 
 import Input from "./Input";
 
 const Navbar = () => {
-  const NewInput = [
-    {
-      id: uuidv4(),
-      email: "",
-      password: "",
-    },
-  ];
-  const [values, setValues] = useState(NewInput);
-  const NewValues = (value) => {
-    setValues((PrevValue) => [...PrevValue, value]);
-    console.log(values);
-  };
+
   return (
     <nav>
       <section className={style.option__container}>
@@ -34,7 +22,7 @@ const Navbar = () => {
           </li>
         </ul>
       </section>
-      <Input NewValues={NewValues} />
+      <Input />
     </nav>
   );
 };

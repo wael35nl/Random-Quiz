@@ -61,7 +61,7 @@ input:hover {
   box-shadow: 0 0.6 20px 0 rgba(155, 161, 247, 0.9);
 }
 
-.input__section button {
+.input__section button, .currentOnline button {
   font-size: 1.5rem;
   margin-right: 2rem;
   width: 10rem;
@@ -77,4 +77,11 @@ input:hover {
   box-shadow: 0 0.6 18px 0 rgba(155, 161, 247, 0.9);
   transform: scale(1.1);
   color: rgb(110, 234, 253);
+}
+
+.currentOnline {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
