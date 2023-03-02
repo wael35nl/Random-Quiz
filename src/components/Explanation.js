@@ -17,17 +17,17 @@ const Explanation = ({ data, id, showExplanation, setShowExplanation }) => {
   if (showExplanation) {
     if (questionObj.explanation != null) {
       return (
-        <div>
-          <h3>{questionObj.explanation}</h3>
+        <div className={css.explanation}>
           <button
             onClick={() => {
               setTimeout(() => {
                 setShowExplanation(false);
               }, 1);
             }}
-          >
+            className={css.explanationBtn}>
             X
           </button>
+          <h3>{questionObj.explanation}</h3>
         </div>
       );
     } else {
