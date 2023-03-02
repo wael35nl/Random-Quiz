@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import style from "../modular-css/navbar.module.css";
 
 import Input from "./Input";
 
 const Navbar = () => {
+
+  const [onlineUsers, setOnlineUsers] = useState([{
+    id: 1,
+    userName: "Alex",
+    password: "alex2023",
+  }]);
+
+  const handleAddOnlineUser = (addOnlineUser) => {
+    setOnlineUsers(onlineUsers => [...onlineUsers, addOnlineUser]);
+  }
+
+  const handleDeleteOnlineUser = (onlineUserId) => {
+    setOnlineUsers(onlineUsers => onlineUsers.filter(onlineUser => onlineUser.id !== onlineUserId));
+  }
 
   return (
     <nav>
@@ -22,7 +36,7 @@ const Navbar = () => {
           </li>
         </ul>
       </section>
-      <Input />
+      <Input onlineUsers={onlineUsers} onAddOnlineUser={handleAddOnlineUser} onDeleteOnlineUser={handleDeleteOnlineUser} />
     </nav>
   );
 };

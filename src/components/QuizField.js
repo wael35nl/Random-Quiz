@@ -153,17 +153,6 @@ const QuizField = ({ data, count, setCount, setRight, setWrong, setId, setShowEx
       </button>
       <button
         className={styles.btn}
-        disabled={count === 0}
-        onClick={() => {
-          setTimeout(() => {
-            setCount((count) => count - 1);
-          }, 1);
-        }}
-      >
-        Previous Question
-      </button>
-      <button
-        className={styles.btn}
         onClick={() => {
           setTimeout(() => {
             setShowExplanation(true);
