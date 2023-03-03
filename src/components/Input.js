@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
 import style from "../modular-css/navbar.module.css";
 
 const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
@@ -19,15 +22,20 @@ const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
     setNewOnlineUser({ ...newOnlineUser, [event.target.name]: event.target.value });
   };
 
+  const MySwal = withReactContent(Swal);
+
   const handelSubmit = (event) => {
     event.preventDefault();
-    alert(`welcome ${newOnlineUser.userName}`);
+    MySwal.fire({
+      iconHtml: <span className={style.heart}>&hearts;</span>,
+      title: <h1 style={{ fontSize: '3rem' }}>Welcome {newOnlineUser.userName}</h1>,
+      confirmButtonText: <h2>ENJOY</h2>,
+    }).then(() => { return onAddOnlineUser(newOnlineUser) });
     setNewOnlineUser({
       id: createId,
       userName: "",
       password: "",
     });
-    onAddOnlineUser(newOnlineUser);
   };
 
   const handleAddClick = () => {

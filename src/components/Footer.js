@@ -1,13 +1,23 @@
 import React from "react";
 import { FaFacebook, FaYoutube, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import styles from '../modular-css/footer.module.css'
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
+import styles from '../modular-css/footer.module.css';
+
 let firstClick = false;
+
+const MySwal = withReactContent(Swal);
 
 const Footer = () => {
     const handleClick = () => {
         if (!firstClick) {
-            alert('Easter Egg No.2 Found! ♡')
+            MySwal.fire({
+                iconHtml: <span className={styles.heart}>&hearts;</span>,
+                title: <h1 style={{ fontSize: '3rem' }}>Easter Egg No.2 Found!</h1>,
+                confirmButtonText: <h2>Good job</h2>,
+            });
             firstClick = true;
         };
     }

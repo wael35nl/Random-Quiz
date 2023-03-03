@@ -85,3 +85,7 @@ input:hover {
   justify-content: space-around;
   align-items: center;
 }
+
+.heart {
+  color: #498153;
+}
