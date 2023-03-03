@@ -9,7 +9,7 @@ const useFetch = () => {
         setIsLoading(true);
         const fetchData = async () => {
             try {
-                const data = await fetch('https://quizapi.io/api/v1/questions?apiKey=VwnzWX5vO3Zh9IsL0rEkJCg7eLS297WFjr5Ois8O');
+                const data = await fetch('https://quizapi.io/api/v1/questions?apiKey=D91t9Yld1icwQstXdfWbjrGElhBJ8ZeAPjEeQYmf');
                 if (!data.ok) throw new Error('Failed to load...');
                 const jsonData = await data.json();
                 setData(jsonData);
