@@ -62,18 +62,19 @@ input:hover {
 }
 
 .input__section button, .currentOnline button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 2rem;
-  width: 10rem;
+  width: fit-content;
+  padding: 0 0.3em;
+  height: 2.7rem;
   background-color: transparent;
   color: aliceblue;
   border-radius: 0.6rem;
-  padding: 0.3rem 0;
   box-shadow: 0 0.6 12px 0 rgba(48, 79, 253, 0.9);
   cursor: pointer;
 }
 
-.input__section button:hover {
+.input__section button:hover, .currentOnline button:hover {
   box-shadow: 0 0.6 18px 0 rgba(155, 161, 247, 0.9);
   transform: scale(1.1);
   color: rgb(110, 234, 253);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
@@ -23,6 +23,7 @@ const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
   };
 
   const MySwal = withReactContent(Swal);
+  const buttonText = useRef();
 
   const handelSubmit = (event) => {
     event.preventDefault();
@@ -30,7 +31,7 @@ const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
       iconHtml: <span className={style.heart}>&hearts;</span>,
       title: <h1 style={{ fontSize: '3rem' }}>Welcome {newOnlineUser.userName}</h1>,
       confirmButtonText: <h2>ENJOY</h2>,
-    }).then(() => { return onAddOnlineUser(newOnlineUser) });
+    }).then(() => { return onAddOnlineUser(newOnlineUser) }).then(() => { buttonText.current.textContent = 'LOG OUT'; buttonText.current.style.backgroundColor = 'transparent' });
     setNewOnlineUser({
       id: createId,
       userName: "",
@@ -56,7 +57,7 @@ const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
   const newOnline = onlineUsers.map(online => (online.userName + ' - '));
 
   const currentOnline = nowOnline ?
-    <div className={style.currentOnline}><h2 style={{ backgroundColor: 'green', borderRadius: '15px', padding: '0.3em 0.3em 0.1em 0.3em' }}>Currently online: &nbsp;&nbsp; {newOnline}</h2><button onClick={handleRemoveClick}>Log Out</button></div>
+    <div className={style.currentOnline}><h2 style={{ backgroundColor: 'green', borderRadius: '15px', padding: '0.3em 0.3em 0.1em 0.3em' }}>Currently online: &nbsp;&nbsp; {newOnline}</h2><button onClick={handleRemoveClick} ref={buttonText} style={{ backgroundColor: 'green' }}>LOGGING IN</button></div>
     :
     <form className={style.input__section} onSubmit={handelSubmit}>
       <label htmlFor="name">User Name</label>&nbsp;
@@ -66,8 +67,8 @@ const Input = ({ onlineUsers, onAddOnlineUser, onDeleteOnlineUser }) => {
       <button type="submit" onClick={handleAddClick}>
         LOG IN
       </button>
-      <button type="submit">
-        Sign Up
+      <button>
+        SIGN UP
       </button>
     </form>
 
